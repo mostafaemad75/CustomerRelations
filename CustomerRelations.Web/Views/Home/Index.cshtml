@@ -1,4 +1,4 @@
-﻿
+﻿@model CustomerRelations.Web.Models.TestViewModel
 @{
     ViewBag.Title = "Test";
     ViewBag.ViewTitle = "Test View Title";
@@ -6,5 +6,5 @@
     Layout = "~/Views/shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>@Html.DisplayNameFor(model => model.Test)</h2>
 
